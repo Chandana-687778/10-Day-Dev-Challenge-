@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(228, 237, 247); /* Light bluish background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.modal {
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 10px;
+    width: 500px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+    border-radius: 20px;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.modal-header h2 {
+    font-size: 20px;
+    color: #486282;
+    margin-block-end: 20px;
+}
+
+.close-btn {
+    font-size: 24px;
+    color: #486282;
+    cursor: pointer;
+    margin-block-end: 20px;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.icon i {
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgba(228, 237, 247, 0.8); /* Light bluish background for icons */
+    color: #486282;
+}
+
+.icon p {
+    margin-top: 5px;
+    font-size: 12px;
+    color: #486282;
+}
+
+.icon.highlighted i {
+    background-color: #fee8e8;
+    color: orange;
+}
+.icon.highlighted p {
+    color: orange;
+}
+.icon:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.share-link p {
+    font-size: 14px;
+    color: #486282;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.link-container {
+    display: flex;
+    align-items: center;
+    background-color: #FFFFFF; 
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.link-container input {
+    border: none;
+    background: none;
+    width: 100%;
+    padding: 5px;
+    font-size: 14px;
+    color: #486282;
+    outline: none;
+}
+
+.copy-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.copy-btn i {
+    font-size: 18px;
+    color: #ff6347; 
+}
+
+.copy-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.share-link p{
+  margin-inline-start: 170px;
+}
